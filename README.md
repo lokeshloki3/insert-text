@@ -1,12 +1,17 @@
-# React + Vite
+Demo - https://lokeshloki3.github.io/insert-text/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features
 
-Currently, two official plugins are available:
+1. **Two Major Elements**:  
+   - The `<Document />` component contains:  
+     - A **textarea** for user input.  
+     - A **div** that acts as the document container where submitted text is displayed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. **Text Submission on Enter**:  
+   - When the user presses **Enter** inside the textarea:  
+     - The current text is **added to the document container**.  
+     - The textarea is **cleared** automatically.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. **Highlighting Effect**:  
+   - The **recently added text** inside the document receives a **blue highlight**.  
+   - This blue highlight **fades away after 2 seconds**.
