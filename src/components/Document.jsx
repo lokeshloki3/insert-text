@@ -42,9 +42,7 @@ const Document = () => {
                 {content.map((item, index) => (
                     <div
                         key={index}
-                        style={{
-                            backgroundColor: hightlightedIndex === index ? "bg-blue-500 text-white" : "transparent"
-                        }}
+                        className={`p-2 rounded transition-colors duration-300 ${hightlightedIndex === index ? "bg-blue-500 text-white" : "bg-gray-100"}`}
                     >
                         {item}
                     </div>
